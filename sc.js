@@ -218,7 +218,7 @@
                 let {env: e} = process || {
                     env: {}
                 };
-                return e.debug === "emittery" || e.debug === "*" || Ee
+                return e?.debug === "emittery" || e?.debug === "*" || Ee
             }
             static set isDebugEnabled(e) {
                 Ee = e
